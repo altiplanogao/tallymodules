@@ -38,7 +38,7 @@ public class ElevatorModuleDataService
                 centerDefinition = new CenterDefinition();
                 centerDefinition.setServiceUrl("http://localhost:8080/module.center");
                 centerDefinition.setPublicKey("");
-                entityService.create(CenterDefinition.class, centerDefinition);
+                entityService.create(centerDefinition);
             }
         }catch (ServiceException e){
             throw new RuntimeException(e);
